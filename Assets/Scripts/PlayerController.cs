@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour {
     private int count;
     private int numPickups = 3;
     public TextMeshProUGUI scoreText;
-    public TestMeshProUGUI winText;
+    public TextMeshProUGUI winText;
 
     void Start()
     {
