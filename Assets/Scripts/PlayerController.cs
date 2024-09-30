@@ -11,12 +11,18 @@ public class PlayerController : MonoBehaviour {
     private int numPickups = 3;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI winText;
+    public Vector2 moveValue;
 
     void Start()
     {
         count = 0;
         winText.text = "";
         SetCountText();
+    }
+
+    void OnMove(InputValue value)
+    {
+        moveValue = value.Get<Vector2>();
     }
 
     void FixedUpdate()
